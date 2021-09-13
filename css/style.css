@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#Bola {
+animation: bolaAnimada 5s;
+width: 150px;
+}
+
+@keyframes bolaAnimada{
+    from{
+        opacity: 0;
+        transform: translateX(-150%) rotate(-720deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(900%) rotate(0deg);
+    }
+}
+
+#Pinguim {
+    animation: pinguimAnimado 5s;
+    height: 150px;
+    margin-top: 20px;
+}
+
+@keyframes pinguimAnimado{
+    from{
+        transform: rotate(900deg) translate(40%);
+    }
+    to{
+        transform: rotate(0deg) translate(0%);
+    }
+}
+
+.botao{
+    padding: 10px;
+    margin: 20px auto;
+    display:block;
+    animation: botaoAnimado 5s;
+    background-color: chocolate;
+    color: whitesmoke;
+    border-radius: 12px;
+    border: solid yellow 3px;
+}
+
+@keyframes botaoAnimado {
+    from{
+        background-color:rgb(114, 250, 159)
+    }
+    to{
+        background-color: chocolate
+    }
+}
